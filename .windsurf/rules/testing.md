@@ -1,6 +1,5 @@
 ---
-trigger: manual
-glob:
+trigger: always_on
 description: Reguły testowania (Jest, React Native Testing Library, Detox, testy edge functions, pokrycie kodu).
 ---
 

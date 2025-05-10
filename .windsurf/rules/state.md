@@ -1,6 +1,5 @@
 ---
-trigger: manual
-glob:
+trigger: always_on
 description: Reguły zarządzania stanem aplikacji (Zustand, TanStack Query, React Hook Form).
 ---
 

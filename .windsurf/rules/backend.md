@@ -1,6 +1,5 @@
 ---
-trigger: manual
-glob:
+trigger: always_on
 description: Reguły backendowe dla Supabase, Edge Functions (TypeScript/Deno), bezpieczeństwa, walidacji oraz integracji z Stripe.
 ---
 
@@ -13,7 +12,7 @@ description: Reguły backendowe dla Supabase, Edge Functions (TypeScript/Deno), 
 - Unikaj enumów – stosuj typy literalne lub mapy.
 - Stosuj wzorce wczesnego zwracania (early return) w obsłudze błędów.
 - Loguj błędy i obsługuj przypadki brzegowe na początku funkcji.
-- Wrażliwe operacje wykonuj tylko z odpowiednimi uprawnieniami (np. service_role_key).
+- Wrażliwe operacje wykonuj tylko z odpowiednimi uprawnieniami (np. `service_role_key` używaj tylko tam, gdzie jest to absolutnie konieczne i nie ma innego sposobu na osiągnięcie celu z uprawnieniami użytkownika).
 - Synchronizuj status subskrypcji Stripe z użytkownikiem w Supabase.
 - Testuj funkcje edge lokalnie przed wdrożeniem.
 

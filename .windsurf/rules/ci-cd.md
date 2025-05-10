@@ -1,6 +1,5 @@
 ---
-trigger: manual
-glob:
+trigger: always_on
 description: Reguły CI/CD i automatyzacji (GitHub Actions, bezpieczeństwo, automatyczne testy, deployment).
 ---
 
@@ -13,4 +12,4 @@ description: Reguły CI/CD i automatyzacji (GitHub Actions, bezpieczeństwo, aut
 - Używaj osobnych workflow dla builda, testów i deploymentu.
 - Weryfikuj poprawność builda oraz uruchamiaj testy automatyczne przed deploymentem.
 - Monitoruj status workflow i reaguj na niepowodzenia.
-- Dokumentuj workflow w plikach YAML oraz README.
+- Dokumentuj workflow w plikach YAML oraz README, w tym opisz kroki, które wykonuje workflow, oraz sposób obsługi błędów i niepowodzeń.
